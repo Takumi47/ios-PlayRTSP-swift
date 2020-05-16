@@ -29,6 +29,10 @@
 		C08619B1246FBFCF0018CFFC /* RTSPViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08619B0246FBFCF0018CFFC /* RTSPViewCell.swift */; };
 		C08619B3246FBFE90018CFFC /* XButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08619B2246FBFE90018CFFC /* XButton.swift */; };
 		C08619B5246FC1950018CFFC /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08619B4246FC1950018CFFC /* GlobalConstants.swift */; };
+		C08619B7246FC2D10018CFFC /* RealmProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08619B6246FC2D10018CFFC /* RealmProvider.swift */; };
+		C08619BB246FC31C0018CFFC /* RTSPItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08619BA246FC31C0018CFFC /* RTSPItem.swift */; };
+		C08619BD246FC33A0018CFFC /* RxModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08619BC246FC33A0018CFFC /* RxModel.swift */; };
+		C08619BF246FC3520018CFFC /* RTSPItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08619BE246FC3520018CFFC /* RTSPItemModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +62,10 @@
 		C08619B0246FBFCF0018CFFC /* RTSPViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTSPViewCell.swift; sourceTree = "<group>"; };
 		C08619B2246FBFE90018CFFC /* XButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XButton.swift; sourceTree = "<group>"; };
 		C08619B4246FC1950018CFFC /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		C08619B6246FC2D10018CFFC /* RealmProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmProvider.swift; sourceTree = "<group>"; };
+		C08619BA246FC31C0018CFFC /* RTSPItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTSPItem.swift; sourceTree = "<group>"; };
+		C08619BC246FC33A0018CFFC /* RxModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxModel.swift; sourceTree = "<group>"; };
+		C08619BE246FC3520018CFFC /* RTSPItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTSPItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +186,7 @@
 		C0861992246FBCEE0018CFFC /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C08619B6246FC2D10018CFFC /* RealmProvider.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -185,6 +194,8 @@
 		C0861993246FBCF80018CFFC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C08619B8246FC2F60018CFFC /* Entities */,
+				C08619B9246FC3020018CFFC /* DataModel */,
 				C08619B4246FC1950018CFFC /* GlobalConstants.swift */,
 			);
 			name = Models;
@@ -206,6 +217,23 @@
 				C086197D246FBC9D0018CFFC /* ViewController.swift */,
 			);
 			path = "Base Controller";
+			sourceTree = "<group>";
+		};
+		C08619B8246FC2F60018CFFC /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C08619BA246FC31C0018CFFC /* RTSPItem.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		C08619B9246FC3020018CFFC /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				C08619BC246FC33A0018CFFC /* RxModel.swift */,
+				C08619BE246FC3520018CFFC /* RTSPItemModel.swift */,
+			);
+			name = DataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,16 +359,20 @@
 				C08619B5246FC1950018CFFC /* GlobalConstants.swift in Sources */,
 				C08619A9246FBF180018CFFC /* RTSPListViewController.swift in Sources */,
 				C086197E246FBC9D0018CFFC /* ViewController.swift in Sources */,
+				C08619BF246FC3520018CFFC /* RTSPItemModel.swift in Sources */,
 				C0861997246FBDB50018CFFC /* CALayer+.swift in Sources */,
+				C08619B7246FC2D10018CFFC /* RealmProvider.swift in Sources */,
 				C08619AB246FBF2C0018CFFC /* RTSPViewController.swift in Sources */,
 				C086199B246FBE3E0018CFFC /* UIImage+.swift in Sources */,
 				C0861999246FBE1A0018CFFC /* UICollectionView+.swift in Sources */,
+				C08619BB246FC31C0018CFFC /* RTSPItem.swift in Sources */,
 				C08619A3246FBEAD0018CFFC /* Path.swift in Sources */,
 				C08619A7246FBED60018CFFC /* ThemeAdopting.swift in Sources */,
 				C08619B3246FBFE90018CFFC /* XButton.swift in Sources */,
 				C08619AD246FBF9E0018CFFC /* RTSPView.swift in Sources */,
 				C08619A5246FBEBD0018CFFC /* SegueHandlerType.swift in Sources */,
 				C086197A246FBC9D0018CFFC /* AppDelegate.swift in Sources */,
+				C08619BD246FC33A0018CFFC /* RxModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

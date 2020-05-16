@@ -63,7 +63,7 @@ class RTSPListViewController: ViewController {
     }
     
     @objc func onTrashButtonTapped() {
-//        if RTSPItemModel.items.isEmpty { return }
+        if RTSPItemModel.items.isEmpty { return }
         navigationItem.rightBarButtonItem = doneButton
         isEditing = true
     }
@@ -85,18 +85,16 @@ class RTSPListViewController: ViewController {
         let p2 = gesture.location(in: cell)
         if cell.rtspView.contentView.frame.contains(p2) {
             
-//            /* close all other media */
-//            let item = RTSPItemModel.items[indexPath.item]
+            /* close all other media */
+            let item = RTSPItemModel.items[indexPath.item]
 //            IJKMediaService.shared.setSingleMedia(with: item.uuid)
-//
-//            /* play selected media */
+
+            /* play selected media */
 //            if IJKMediaService.shared.hasMedia(with: item.uuid) == false {
 //                IJKMediaService.shared.setMedia(with: item.uuid, url: item.url)
 //            }
-//
-//            performSegue(withIdentifier: .detail, sender: (cell.heroID, item.uuid))
-            
-            performSegue(withIdentifier: .detail, sender: (cell.heroID, cell.heroID))
+
+            performSegue(withIdentifier: .detail, sender: (cell.heroID, item.uuid))
         }
     }
     
@@ -118,13 +116,13 @@ class RTSPListViewController: ViewController {
     }
     
     private func addObservers() {
-//        RTSPItemModel.didUpdate = { [weak self] (deleted, inserted, updated) in
-//            self?.collectionView.applyChanges(deletions: deleted, insertions: inserted, updates: updated)
-//        }
+        RTSPItemModel.didUpdate = { [weak self] (deleted, inserted, updated) in
+            self?.collectionView.applyChanges(deletions: deleted, insertions: inserted, updates: updated)
+        }
     }
     
     private func removeObservers() {
-//        RTSPItemModel.didUpdate = nil
+        RTSPItemModel.didUpdate = nil
     }
     
     private func addRTSP() {
@@ -135,7 +133,7 @@ class RTSPListViewController: ViewController {
         
         let addAction = UIAlertAction(title: "Add", style: .default) { _ in
             if let name = nameField.text, !name.isEmpty, let url = urlField.text, !url.isEmpty {
-//                RTSPItemModel.add(name: name, url: url)
+                RTSPItemModel.add(name: name, url: url)
             }
         }
         addAction.isEnabled = false
@@ -170,13 +168,13 @@ class RTSPListViewController: ViewController {
 extension RTSPListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
         guard let cell = cell as? RTSPViewCell else { return }
-//        let item = RTSPItemModel.items[indexPath.item]
+        let item = RTSPItemModel.items[indexPath.item]
         
         cell.isShaking = isEditing
         cell.heroID = "rtsp_\(indexPath.item)"
-//        cell.rtspView.object = item
-//        cell.rtspView.playHandler = play(uuid:url:)
-//        cell.rtspView.deletionHandler = delete(uuid:)
+        cell.rtspView.object = item
+        cell.rtspView.playHandler = play(uuid:url:)
+        cell.rtspView.deletionHandler = delete(uuid:)
     }
     
     private func play(uuid: String, url: String) {
@@ -187,7 +185,7 @@ extension RTSPListViewController: UICollectionViewDelegate {
     
     private func delete(uuid: String) {
 //        IJKMediaService.shared.removeMedia(with: uuid)
-//        RTSPItemModel.delete(uuid: uuid)
+        RTSPItemModel.delete(uuid: uuid)
     }
 }
 
@@ -195,7 +193,7 @@ extension RTSPListViewController: UICollectionViewDelegate {
 
 extension RTSPListViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        let count = 1//RTSPItemModel.items.count
+        let count = RTSPItemModel.items.count
         defer {
             addRTSPButton.isVisible(count == 0)
             if count == 0 { onDoneButtonTapped() }

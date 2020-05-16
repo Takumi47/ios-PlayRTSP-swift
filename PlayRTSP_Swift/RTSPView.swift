@@ -19,12 +19,12 @@ class RTSPView: UIView, NibLoadable {
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var deleteButton: UIButton!
     
-//    var object: RTSPItem? {
-//        didSet {
-//            guard let obj = object else { return }
-//            nameLabel.text = obj.name
-//            urlLabel.text = obj.url
-//
+    var object: RTSPItem? {
+        didSet {
+            guard let obj = object else { return }
+            nameLabel.text = obj.name
+            urlLabel.text = obj.url
+
 //            if let media = IJKMediaService.shared.fetch(with: obj.uuid) {
 //                playButton.setImage(UIImage.stop, for: .normal)
 //                if let playerView = media.player?.view {
@@ -37,8 +37,8 @@ class RTSPView: UIView, NibLoadable {
 //                playButton.setImage(UIImage.play, for: .normal)
 //                contentView.subviews.forEach { $0.removeFromSuperview() }
 //            }
-//        }
-//    }
+        }
+    }
 
     var playHandler: ((String, String) -> Void)?
     var deletionHandler: ((String) -> Void)?
@@ -65,13 +65,13 @@ class RTSPView: UIView, NibLoadable {
     // MARK: - Selector
     
     @IBAction func onPlayButtonTapped() {
-//        guard let obj = object else { return }
-//        playHandler?(obj.uuid, obj.url)
+        guard let obj = object else { return }
+        playHandler?(obj.uuid, obj.url)
     }
     
     @IBAction func onDeleteButtonTapped() {
-//        guard let obj = object else { return }
-//        deletionHandler?(obj.uuid)
+        guard let obj = object else { return }
+        deletionHandler?(obj.uuid)
     }
     
     // MARK: - Methods
@@ -91,7 +91,7 @@ class RTSPView: UIView, NibLoadable {
     }
     
     func clear() {
-//        object = nil
+        object = nil
         contentView.subviews.forEach { $0.removeFromSuperview() }
     }
     
