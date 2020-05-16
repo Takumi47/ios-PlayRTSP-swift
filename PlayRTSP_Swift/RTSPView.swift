@@ -25,18 +25,18 @@ class RTSPView: UIView, NibLoadable {
             nameLabel.text = obj.name
             urlLabel.text = obj.url
 
-//            if let media = IJKMediaService.shared.fetch(with: obj.uuid) {
-//                playButton.setImage(UIImage.stop, for: .normal)
-//                if let playerView = media.player?.view {
-//                    media.player?.scalingMode = .aspectFill
-//                    playerView.frame = contentView.bounds
-//                    contentView.autoresizesSubviews = true
-//                    contentView.addSubview(playerView)
-//                }
-//            } else {
-//                playButton.setImage(UIImage.play, for: .normal)
-//                contentView.subviews.forEach { $0.removeFromSuperview() }
-//            }
+            if let media = IJKMediaService.shared.fetch(with: obj.uuid) {
+                playButton.setImage(UIImage.stop, for: .normal)
+                if let playerView = media.player?.view {
+                    media.player?.scalingMode = .aspectFill
+                    playerView.frame = contentView.bounds
+                    contentView.autoresizesSubviews = true
+                    contentView.addSubview(playerView)
+                }
+            } else {
+                playButton.setImage(UIImage.play, for: .normal)
+                contentView.subviews.forEach { $0.removeFromSuperview() }
+            }
         }
     }
 

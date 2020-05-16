@@ -51,6 +51,11 @@ class RTSPListViewController: ViewController {
         addObservers()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        collectionView.reloadData()
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         removeObservers()
@@ -87,12 +92,12 @@ class RTSPListViewController: ViewController {
             
             /* close all other media */
             let item = RTSPItemModel.items[indexPath.item]
-//            IJKMediaService.shared.setSingleMedia(with: item.uuid)
+            IJKMediaService.shared.setSingleMedia(with: item.uuid)
 
             /* play selected media */
-//            if IJKMediaService.shared.hasMedia(with: item.uuid) == false {
-//                IJKMediaService.shared.setMedia(with: item.uuid, url: item.url)
-//            }
+            if IJKMediaService.shared.hasMedia(with: item.uuid) == false {
+                IJKMediaService.shared.setMedia(with: item.uuid, url: item.url)
+            }
 
             performSegue(withIdentifier: .detail, sender: (cell.heroID, item.uuid))
         }
@@ -179,12 +184,12 @@ extension RTSPListViewController: UICollectionViewDelegate {
     
     private func play(uuid: String, url: String) {
         if isEditing { return }
-//        IJKMediaService.shared.setMedia(with: uuid, url: url)
+        IJKMediaService.shared.setMedia(with: uuid, url: url)
         collectionView.reloadData()
     }
     
     private func delete(uuid: String) {
-//        IJKMediaService.shared.removeMedia(with: uuid)
+        IJKMediaService.shared.removeMedia(with: uuid)
         RTSPItemModel.delete(uuid: uuid)
     }
 }

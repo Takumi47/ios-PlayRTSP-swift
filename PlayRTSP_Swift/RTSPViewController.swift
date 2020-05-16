@@ -28,14 +28,14 @@ class RTSPViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        if let uuid = uuid,
-//            let media = IJKMediaService.shared.fetch(with: uuid),
-//            let playerView = media.player?.view {
-//            media.player?.scalingMode = .aspectFit
-//            playerView.frame = view.bounds
-//            view.autoresizesSubviews = true
-//            view.addSubview(playerView)
-//        }
+        if let uuid = uuid,
+            let media = IJKMediaService.shared.fetch(with: uuid),
+            let playerView = media.player?.view {
+            media.player?.scalingMode = .aspectFit
+            playerView.frame = view.bounds
+            view.autoresizesSubviews = true
+            view.addSubview(playerView)
+        }
     }
     
     override func viewDidLayoutSubviews() {
@@ -56,7 +56,11 @@ class RTSPViewController: UIViewController {
         switch gesture.state {
         case .began:
             UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
-            hero.dismissViewController()
+            hero.dismissViewController() { [weak self] in
+                if let uuid = self?.uuid {
+                    IJKMediaService.shared.removeMedia(with: uuid)
+                }
+            }
         default:
             Hero.shared.finish()
         }
