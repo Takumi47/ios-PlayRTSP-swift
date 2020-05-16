@@ -3,27 +3,61 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FF36DB1AD8F1BED0D9FDD51 /* Pods_PlayRTSP_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 441757BB1EFAE095BC28D529 /* Pods_PlayRTSP_Swift.framework */; };
 		C086197A246FBC9D0018CFFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0861979246FBC9D0018CFFC /* AppDelegate.swift */; };
-		C086197C246FBC9D0018CFFC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C086197B246FBC9D0018CFFC /* SceneDelegate.swift */; };
 		C086197E246FBC9D0018CFFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C086197D246FBC9D0018CFFC /* ViewController.swift */; };
 		C0861981246FBC9D0018CFFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C086197F246FBC9D0018CFFC /* Main.storyboard */; };
 		C0861983246FBC9E0018CFFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0861982246FBC9E0018CFFC /* Assets.xcassets */; };
 		C0861986246FBC9E0018CFFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0861984246FBC9E0018CFFC /* LaunchScreen.storyboard */; };
+		C0861997246FBDB50018CFFC /* CALayer+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0861996246FBDB50018CFFC /* CALayer+.swift */; };
+		C0861999246FBE1A0018CFFC /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0861998246FBE1A0018CFFC /* UICollectionView+.swift */; };
+		C086199B246FBE3E0018CFFC /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C086199A246FBE3E0018CFFC /* UIImage+.swift */; };
+		C086199D246FBE5A0018CFFC /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C086199C246FBE5A0018CFFC /* UIView+.swift */; };
+		C086199F246FBE740018CFFC /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C086199E246FBE740018CFFC /* UIViewController+.swift */; };
+		C08619A1246FBE940018CFFC /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08619A0246FBE940018CFFC /* NibLoadable.swift */; };
+		C08619A3246FBEAD0018CFFC /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08619A2246FBEAD0018CFFC /* Path.swift */; };
+		C08619A5246FBEBD0018CFFC /* SegueHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08619A4246FBEBD0018CFFC /* SegueHandlerType.swift */; };
+		C08619A7246FBED60018CFFC /* ThemeAdopting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08619A6246FBED60018CFFC /* ThemeAdopting.swift */; };
+		C08619A9246FBF180018CFFC /* RTSPListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08619A8246FBF180018CFFC /* RTSPListViewController.swift */; };
+		C08619AB246FBF2C0018CFFC /* RTSPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08619AA246FBF2C0018CFFC /* RTSPViewController.swift */; };
+		C08619AD246FBF9E0018CFFC /* RTSPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08619AC246FBF9E0018CFFC /* RTSPView.swift */; };
+		C08619AF246FBFB30018CFFC /* RTSPView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C08619AE246FBFB30018CFFC /* RTSPView.xib */; };
+		C08619B1246FBFCF0018CFFC /* RTSPViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08619B0246FBFCF0018CFFC /* RTSPViewCell.swift */; };
+		C08619B3246FBFE90018CFFC /* XButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08619B2246FBFE90018CFFC /* XButton.swift */; };
+		C08619B5246FC1950018CFFC /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C08619B4246FC1950018CFFC /* GlobalConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		441757BB1EFAE095BC28D529 /* Pods_PlayRTSP_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayRTSP_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		991592DED1F0B82718E988F8 /* Pods-PlayRTSP_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayRTSP_Swift.release.xcconfig"; path = "Target Support Files/Pods-PlayRTSP_Swift/Pods-PlayRTSP_Swift.release.xcconfig"; sourceTree = "<group>"; };
+		B2CD5EE45B856AA749E2103C /* Pods-PlayRTSP_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayRTSP_Swift.debug.xcconfig"; path = "Target Support Files/Pods-PlayRTSP_Swift/Pods-PlayRTSP_Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		C0861976246FBC9D0018CFFC /* PlayRTSP_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayRTSP_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0861979246FBC9D0018CFFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C086197B246FBC9D0018CFFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C086197D246FBC9D0018CFFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C0861980246FBC9D0018CFFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C0861982246FBC9E0018CFFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0861985246FBC9E0018CFFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0861987246FBC9E0018CFFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0861996246FBDB50018CFFC /* CALayer+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+.swift"; sourceTree = "<group>"; };
+		C0861998246FBE1A0018CFFC /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
+		C086199A246FBE3E0018CFFC /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		C086199C246FBE5A0018CFFC /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		C086199E246FBE740018CFFC /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		C08619A0246FBE940018CFFC /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		C08619A2246FBEAD0018CFFC /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		C08619A4246FBEBD0018CFFC /* SegueHandlerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueHandlerType.swift; sourceTree = "<group>"; };
+		C08619A6246FBED60018CFFC /* ThemeAdopting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeAdopting.swift; sourceTree = "<group>"; };
+		C08619A8246FBF180018CFFC /* RTSPListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTSPListViewController.swift; sourceTree = "<group>"; };
+		C08619AA246FBF2C0018CFFC /* RTSPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTSPViewController.swift; sourceTree = "<group>"; };
+		C08619AC246FBF9E0018CFFC /* RTSPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTSPView.swift; sourceTree = "<group>"; };
+		C08619AE246FBFB30018CFFC /* RTSPView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RTSPView.xib; sourceTree = "<group>"; };
+		C08619B0246FBFCF0018CFFC /* RTSPViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTSPViewCell.swift; sourceTree = "<group>"; };
+		C08619B2246FBFE90018CFFC /* XButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XButton.swift; sourceTree = "<group>"; };
+		C08619B4246FC1950018CFFC /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +65,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FF36DB1AD8F1BED0D9FDD51 /* Pods_PlayRTSP_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1464D0C488260B1E844C5015 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				441757BB1EFAE095BC28D529 /* Pods_PlayRTSP_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		174C3B0F1BCF9A1F9822E2E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B2CD5EE45B856AA749E2103C /* Pods-PlayRTSP_Swift.debug.xcconfig */,
+				991592DED1F0B82718E988F8 /* Pods-PlayRTSP_Swift.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C086196D246FBC9D0018CFFC = {
 			isa = PBXGroup;
 			children = (
 				C0861978246FBC9D0018CFFC /* PlayRTSP_Swift */,
 				C0861977246FBC9D0018CFFC /* Products */,
+				174C3B0F1BCF9A1F9822E2E9 /* Pods */,
+				1464D0C488260B1E844C5015 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +111,101 @@
 			isa = PBXGroup;
 			children = (
 				C0861979246FBC9D0018CFFC /* AppDelegate.swift */,
-				C086197B246FBC9D0018CFFC /* SceneDelegate.swift */,
-				C086197D246FBC9D0018CFFC /* ViewController.swift */,
-				C086197F246FBC9D0018CFFC /* Main.storyboard */,
-				C0861982246FBC9E0018CFFC /* Assets.xcassets */,
-				C0861984246FBC9E0018CFFC /* LaunchScreen.storyboard */,
-				C0861987246FBC9E0018CFFC /* Info.plist */,
+				C0861994246FBD000018CFFC /* Assets */,
+				C0861993246FBCF80018CFFC /* Models */,
+				C0861992246FBCEE0018CFFC /* Services */,
+				C0861991246FBCE70018CFFC /* Views */,
+				C0861990246FBCDC0018CFFC /* Controllers */,
+				C086198F246FBCD40018CFFC /* Extensions */,
+				C086198E246FBCC70018CFFC /* Utils */,
+				C086198D246FBCB90018CFFC /* Supporting Files */,
 			);
 			path = PlayRTSP_Swift;
+			sourceTree = "<group>";
+		};
+		C086198D246FBCB90018CFFC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C0861987246FBC9E0018CFFC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C086198E246FBCC70018CFFC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C08619A0246FBE940018CFFC /* NibLoadable.swift */,
+				C08619A2246FBEAD0018CFFC /* Path.swift */,
+				C08619A4246FBEBD0018CFFC /* SegueHandlerType.swift */,
+				C08619A6246FBED60018CFFC /* ThemeAdopting.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		C086198F246FBCD40018CFFC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C0861996246FBDB50018CFFC /* CALayer+.swift */,
+				C0861998246FBE1A0018CFFC /* UICollectionView+.swift */,
+				C086199A246FBE3E0018CFFC /* UIImage+.swift */,
+				C086199C246FBE5A0018CFFC /* UIView+.swift */,
+				C086199E246FBE740018CFFC /* UIViewController+.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		C0861990246FBCDC0018CFFC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C0861995246FBD6D0018CFFC /* Base Controller */,
+				C08619A8246FBF180018CFFC /* RTSPListViewController.swift */,
+				C08619AA246FBF2C0018CFFC /* RTSPViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C0861991246FBCE70018CFFC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C08619AE246FBFB30018CFFC /* RTSPView.xib */,
+				C08619AC246FBF9E0018CFFC /* RTSPView.swift */,
+				C08619B0246FBFCF0018CFFC /* RTSPViewCell.swift */,
+				C08619B2246FBFE90018CFFC /* XButton.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C0861992246FBCEE0018CFFC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		C0861993246FBCF80018CFFC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C08619B4246FC1950018CFFC /* GlobalConstants.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C0861994246FBD000018CFFC /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C086197F246FBC9D0018CFFC /* Main.storyboard */,
+				C0861984246FBC9E0018CFFC /* LaunchScreen.storyboard */,
+				C0861982246FBC9E0018CFFC /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		C0861995246FBD6D0018CFFC /* Base Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C086197D246FBC9D0018CFFC /* ViewController.swift */,
+			);
+			path = "Base Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C086198A246FBC9E0018CFFC /* Build configuration list for PBXNativeTarget "PlayRTSP_Swift" */;
 			buildPhases = (
+				4C710CBBF66C83596CA35155 /* [CP] Check Pods Manifest.lock */,
 				C0861972246FBC9D0018CFFC /* Sources */,
 				C0861973246FBC9D0018CFFC /* Frameworks */,
 				C0861974246FBC9D0018CFFC /* Resources */,
+				EC96DDD58F38D5AEE5EDF70F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0861986246FBC9E0018CFFC /* LaunchScreen.storyboard in Resources */,
+				C08619AF246FBFB30018CFFC /* RTSPView.xib in Resources */,
 				C0861983246FBC9E0018CFFC /* Assets.xcassets in Resources */,
 				C0861981246FBC9D0018CFFC /* Main.storyboard in Resources */,
 			);
@@ -133,14 +277,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4C710CBBF66C83596CA35155 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlayRTSP_Swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC96DDD58F38D5AEE5EDF70F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlayRTSP_Swift/Pods-PlayRTSP_Swift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PlayRTSP_Swift/Pods-PlayRTSP_Swift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PlayRTSP_Swift/Pods-PlayRTSP_Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C0861972246FBC9D0018CFFC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C086199F246FBE740018CFFC /* UIViewController+.swift in Sources */,
+				C08619A1246FBE940018CFFC /* NibLoadable.swift in Sources */,
+				C086199D246FBE5A0018CFFC /* UIView+.swift in Sources */,
+				C08619B1246FBFCF0018CFFC /* RTSPViewCell.swift in Sources */,
+				C08619B5246FC1950018CFFC /* GlobalConstants.swift in Sources */,
+				C08619A9246FBF180018CFFC /* RTSPListViewController.swift in Sources */,
 				C086197E246FBC9D0018CFFC /* ViewController.swift in Sources */,
+				C0861997246FBDB50018CFFC /* CALayer+.swift in Sources */,
+				C08619AB246FBF2C0018CFFC /* RTSPViewController.swift in Sources */,
+				C086199B246FBE3E0018CFFC /* UIImage+.swift in Sources */,
+				C0861999246FBE1A0018CFFC /* UICollectionView+.swift in Sources */,
+				C08619A3246FBEAD0018CFFC /* Path.swift in Sources */,
+				C08619A7246FBED60018CFFC /* ThemeAdopting.swift in Sources */,
+				C08619B3246FBFE90018CFFC /* XButton.swift in Sources */,
+				C08619AD246FBF9E0018CFFC /* RTSPView.swift in Sources */,
+				C08619A5246FBEBD0018CFFC /* SegueHandlerType.swift in Sources */,
 				C086197A246FBC9D0018CFFC /* AppDelegate.swift in Sources */,
-				C086197C246FBC9D0018CFFC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +482,13 @@
 		};
 		C086198B246FBC9E0018CFFC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2CD5EE45B856AA749E2103C /* Pods-PlayRTSP_Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NCGTM97MB7;
 				INFOPLIST_FILE = PlayRTSP_Swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,17 +496,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xander.PlayRTSP-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C086198C246FBC9E0018CFFC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 991592DED1F0B82718E988F8 /* Pods-PlayRTSP_Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NCGTM97MB7;
 				INFOPLIST_FILE = PlayRTSP_Swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +516,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xander.PlayRTSP-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

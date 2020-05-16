@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WsB-I2-1tP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="nO7-fG-73C">
+            <objects>
+                <viewController id="8Q4-92-tKT" customClass="RTSPViewController" customModule="PlayRTSP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DPc-yz-6gV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="C4d-N1-HPR"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="b9b-jL-QMp"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ecT-q7-iBO" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2068.1159420289855" y="99.776785714285708"/>
+        </scene>
+        <!--List View Controller-->
+        <scene sceneID="qpH-8X-MoM">
+            <objects>
+                <viewController id="L67-Fb-ePz" customClass="RTSPListViewController" customModule="PlayRTSP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rqu-lb-WAV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="phR-dn-3Cx">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8kt-i3-rCK">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="L67-Fb-ePz" id="0a8-0Y-U6P"/>
+                                    <outlet property="delegate" destination="L67-Fb-ePz" id="Wre-R6-Bni"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ho7-VQ-4b1" customClass="XButton" customModule="PlayRTSP" customModuleProvider="target">
+                                <rect key="frame" x="103.5" y="341.5" width="207" height="172.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ho7-VQ-4b1" secondAttribute="height" multiplier="120:100" id="L77-gy-FbS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" backgroundImage="video.slash.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
+                                </state>
+                                <connections>
+                                    <action selector="onAddButtonTapped" destination="L67-Fb-ePz" eventType="touchUpInside" id="ezM-fs-TNW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lJu-vn-R4E" firstAttribute="trailing" secondItem="phR-dn-3Cx" secondAttribute="trailing" id="38B-rK-EZp"/>
+                            <constraint firstItem="lJu-vn-R4E" firstAttribute="bottom" secondItem="phR-dn-3Cx" secondAttribute="bottom" id="6tK-dz-fxh"/>
+                            <constraint firstItem="phR-dn-3Cx" firstAttribute="top" secondItem="lJu-vn-R4E" secondAttribute="top" id="8Nw-wi-Eq1"/>
+                            <constraint firstItem="Ho7-VQ-4b1" firstAttribute="centerY" secondItem="lJu-vn-R4E" secondAttribute="centerY" multiplier="0.9" id="9sd-hc-q9V"/>
+                            <constraint firstItem="Ho7-VQ-4b1" firstAttribute="centerX" secondItem="lJu-vn-R4E" secondAttribute="centerX" id="Xeq-3c-2Km"/>
+                            <constraint firstItem="Ho7-VQ-4b1" firstAttribute="width" secondItem="phR-dn-3Cx" secondAttribute="width" multiplier="0.5" id="a21-fW-QQ7"/>
+                            <constraint firstItem="phR-dn-3Cx" firstAttribute="leading" secondItem="lJu-vn-R4E" secondAttribute="leading" id="eni-G5-kPH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lJu-vn-R4E"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xOt-dm-cRD">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="wAC-TX-2vc">
+                            <connections>
+                                <action selector="onAddButtonTapped" destination="L67-Fb-ePz" id="Vpt-Pu-HP9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addButton" destination="wAC-TX-2vc" id="CHQ-Hn-dna"/>
+                        <outlet property="addRTSPButton" destination="Ho7-VQ-4b1" id="76v-ag-890"/>
+                        <outlet property="collectionView" destination="phR-dn-3Cx" id="QSb-sK-WXj"/>
+                        <segue destination="8Q4-92-tKT" kind="presentation" identifier="detail" modalPresentationStyle="fullScreen" id="MUs-hQ-XZ9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qvu-bn-nmw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1268.1159420289855" y="99.776785714285708"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WcV-xb-hJa">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WsB-I2-1tP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Duw-Cy-oMN">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="L67-Fb-ePz" kind="relationship" relationship="rootViewController" id="2FO-gv-WiL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TNq-mY-Zc5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="357.97101449275362" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="video.slash.fill" catalog="system" width="128" height="104"/>
+    </resources>
+</document>
