@@ -35,7 +35,7 @@
                                 <constraint firstAttribute="height" constant="33" id="66s-dd-qZr"/>
                                 <constraint firstAttribute="width" constant="33" id="iSs-1b-IyM"/>
                             </constraints>
-                            <color key="tintColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" image="play.fill" catalog="system">
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
                             </state>
