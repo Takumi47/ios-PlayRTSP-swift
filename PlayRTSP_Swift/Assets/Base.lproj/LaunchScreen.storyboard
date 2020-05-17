@@ -14,7 +14,18 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.19376453757286072" green="0.50850099325180054" blue="0.85232251882553101" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_swift" translatesAutoresizingMaskIntoConstraints="NO" id="bF7-34-oEU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="bF7-34-oEU" secondAttribute="bottom" id="9Vj-Hf-Saj"/>
+                            <constraint firstItem="bF7-34-oEU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OzG-ZY-L1t"/>
+                            <constraint firstItem="bF7-34-oEU" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="UWK-is-f58"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bF7-34-oEU" secondAttribute="trailing" id="XMN-vv-2Ye"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -23,4 +34,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg_swift" width="1125" height="2436"/>
+    </resources>
 </document>

@@ -18,7 +18,7 @@ extension ThemeAdopting where Self: UIViewController {
         guard let nav = navigationController else { return }
         let navBar = nav.navigationBar
         navBar.barStyle = .black
-        navBar.barTintColor = #colorLiteral(red: 0.2389388382, green: 0.5892125368, blue: 0.8818323016, alpha: 1)
+        navBar.barTintColor = #colorLiteral(red: 0.9443228245, green: 0.4312979877, blue: 0.05515092611, alpha: 1)
         navBar.tintColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         navBar.setBackgroundImage(nil, for: .default)
         navBar.titleTextAttributes = [.font: UIFont.systemFont(ofSize: 19, weight: .semibold)]
