@@ -47,6 +47,8 @@
 		C08619D9246FC7F70018CFFC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08619D8246FC7F60018CFFC /* CoreGraphics.framework */; };
 		C08619DB246FC7FE0018CFFC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08619DA246FC7FE0018CFFC /* AVFoundation.framework */; };
 		C08619DD246FC8060018CFFC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08619DC246FC8060018CFFC /* AudioToolbox.framework */; };
+		C0AB904C2473AE7F00A74C1C /* CellBouncible.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0AB904B2473AE7F00A74C1C /* CellBouncible.swift */; };
+		C0AB904D2473AF1800A74C1C /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C08619C4246FC78D0018CFFC /* IJKMediaFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -109,6 +111,7 @@
 		C08619D8246FC7F60018CFFC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		C08619DA246FC7FE0018CFFC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C08619DC246FC8060018CFFC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C0AB904B2473AE7F00A74C1C /* CellBouncible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellBouncible.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0AB904D2473AF1800A74C1C /* IJKMediaFramework.framework in Frameworks */,
 				C08619CF246FC7CB0018CFFC /* OpenGLES.framework in Frameworks */,
 				C08619CD246FC7C20018CFFC /* QuartzCore.framework in Frameworks */,
 				C08619DB246FC7FE0018CFFC /* AVFoundation.framework in Frameworks */,
@@ -209,6 +213,7 @@
 		C086198E246FBCC70018CFFC /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				C0AB904B2473AE7F00A74C1C /* CellBouncible.swift */,
 				C08619A0246FBE940018CFFC /* NibLoadable.swift */,
 				C08619A2246FBEAD0018CFFC /* Path.swift */,
 				C08619A4246FBEBD0018CFFC /* SegueHandlerType.swift */,
@@ -439,6 +444,7 @@
 				C0861999246FBE1A0018CFFC /* UICollectionView+.swift in Sources */,
 				C08619BB246FC31C0018CFFC /* RTSPItem.swift in Sources */,
 				C08619A3246FBEAD0018CFFC /* Path.swift in Sources */,
+				C0AB904C2473AE7F00A74C1C /* CellBouncible.swift in Sources */,
 				C08619A7246FBED60018CFFC /* ThemeAdopting.swift in Sources */,
 				C08619B3246FBFE90018CFFC /* XButton.swift in Sources */,
 				C08619AD246FBF9E0018CFFC /* RTSPView.swift in Sources */,
